@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salonika Panda </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="sticky">
+            <input type="checkbox" id="check">
+            <label for="check" id="checkbtn"><i class="fa fa-bars" ></i></label>
+            <label class="left">
+                <img src="logo.jpg" class="img1">
+            </label>
+            <label class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <section class="FirstSection" id="home">
+            <div class="leftSection">
+                Welcome!
+                <div>I am <span class="text-color">Salonika Panda</span> </div>
+                <div>and i am a </div>
+                <span id="element"></span>
+                <div>Give some time to browse about me..</div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg">
+            </div>
+        </section>
+        <hr>
+        <section class="Secondsection" id="about">
+            <h1>About</h1>
+            <img src="img.jpg">
+            <div>I am a BCA graduating student who is very passionate for full stack development.I love to learn new
+                skills and exploring new things.I do not have any work experience but looking for a good position,
+                so that i can keep developing new skills and can continue learning. </div>
+        </section>
+        <hr>
+        <section class="ThirdSection" id="education">
+            <h1>My Qualifications</h1>
+            <table>
+                <tr>
+                    <th>Qualifications</th>
+                    <th>Passing year</th>
+                    <th>Institution</th>
+                    <th>CGPA/Percentage</th>
+                </tr>
+                <tr>
+                    <td>BCA</td>
+                    <td>2024</td>
+                    <td>Centurion University Of Technology and Management</td>
+                    <td>9.4</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>2021</td>
+                    <td>Vikash Residential School</td>
+                    <td>83.4%</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>2019</td>
+                    <td>Odisha Adarsha Vidyalaya</td>
+                    <td>83.8%</td>
+                </tr>
+            </table>
+        </section>
+        <section class="Fourthsection" id="skills">
+            <h1>My Skills</h1>
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">80%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">75%</div>
+            </div>
+
+            <p>Java</p>
+            <div class="container">
+                <div class="skills java">60%</div>
+            </div>
+
+            <p>MySQL</p>
+            <div class="container">
+                <div class="skills mysql">80%</div>
+            </div>
+            <p>Python</p>
+            <div class="container">
+                <div class="skills python">40%</div>
+            </div>
+        </section>
+        <hr>
+        <section class="FifthSection" id="contact">
+            <h1>Got a Question?</h1>
+            <h3>Contact me</h3>
+            <p>Feel free to message.</p>
+            <form action="mailto:salonikapanda@gmail.com " method="post" enctype="text/plain">
+                <ul>
+
+                    <li><label>Full Name <span class="required">*</span></label><input type="text" class="name"
+                            placeholder="Enter your First Name" /> <input type="text" class="name"
+                            placeholder="Enter Your Last Name" /></li>
+                    <li>
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" class="email" placeholder="Enter valid email address" />
+                    </li>
+                    <li>
+                        <label>Your Message <span class="required">*</span></label>
+                        <textarea class="message" placeholder="Any message for me" rows="5" cols="40"></textarea>
+                    </li>
+                    <li class="button"><input type="submit" value="Send" id="submit">
+                        <input type="reset" value="Reset" id="reset">
+                    </li>
+                </ul>
+
+            </form>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-rights">
+            Created By <span class="text-purple">Salonika Panda</span> | &copy All rights reserved.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['to be Full Stack Developer.', 'Graduating student.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
