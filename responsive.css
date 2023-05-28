@@ -225,7 +225,19 @@ font-size: 25px;
         padding: 0px;
         border-collapse: collapse;
     }
+    .FifthSection form ul{
+        max-width: 350px;
+    }
+    .name{
+        max-width: 200px;
+    }
+    .email{
+        max-width: 200px;
+    }
+    .message{
+        max-width: 200px;
+    }
     .FifthSection form ul li {
-       padding-left: 90px; 
+       padding-left: 80px; 
 }
 }
