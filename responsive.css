@@ -90,9 +90,9 @@ font-size: 25px;
 
     nav ul {
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding: 20px;
-        padding-left: 110px;
+        padding-left: 150px;
     }
 
     nav ul li {
@@ -164,9 +164,9 @@ font-size: 25px;
 
     nav ul {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 20px;
-        padding-left: 150px;
+        padding-left: 110px;
     }
 
     nav ul li {
