@@ -25,9 +25,9 @@
 
     nav ul {
         flex-direction: column;
-        justify-content: space-around;
-        padding: 20px;
-        padding-left: 200px;
+        justify-content: space-evenly;
+        padding: 10px;
+        padding-left: 190px;
     }
 
     nav ul li {
@@ -90,7 +90,7 @@ font-size: 25px;
 
     nav ul {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding: 20px;
         padding-left: 150px;
     }
@@ -164,7 +164,7 @@ font-size: 25px;
 
     nav ul {
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding: 20px;
         padding-left: 110px;
     }
