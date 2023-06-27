@@ -1,47 +1,13 @@
-#checkbtn {
-    float: right;
-    font-size: 30px;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-#check:checked~.right {
-    display: flex;
-}
-
 @media only screen and (max-width: 780px) {
-    .right {
+    .nav-links {
         display: none;
-        position: absolute;
-        top: 100%;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: black;
     }
 
-    nav ul {
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 10px;
-        padding-left: 190px;
+    .hamburger {
+        display: flex;
     }
 
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
 
-    nav ul li a {
-        font-size: 40px;
-    }
-
-    #checkbtn {
-        display: block;
-    }
 
     body {
         overflow-x: hidden;
@@ -52,6 +18,7 @@
     .FirstSection {
         flex-direction: column-reverse;
     }
+
     .leftSection {
         margin-top: 0px;
         width: 90%;
@@ -59,15 +26,18 @@
         font-size: 2.5rem;
         margin-left: 10px;
     }
-    .rightSection{
+
+    .rightSection {
         width: 60%;
     }
-    .Secondsection div{
+
+    .Secondsection div {
         margin: 0px;
         padding: 0px;
         margin-bottom: 20px;
-font-size: 25px;
+        font-size: 25px;
     }
+
     .ThirdSection table,
     th,
     td {
@@ -78,35 +48,27 @@ font-size: 25px;
 }
 
 @media only screen and (max-width: 560px) {
-    .right {
+    .nav-links {
         display: none;
-        position: absolute;
-        top: 100%;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: black;
     }
 
-    nav ul {
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 20px;
-        padding-left: 150px;
+    .hamburger {
+        display: flex;
     }
 
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
+    /* Transform the lines to create a hamburger menu effect */
+    .hamburger.open .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
 
-    nav ul li a {
-        font-size: 40px;
+    .hamburger.open .line:nth-child(2) {
+        opacity: 0;
     }
 
-    #checkbtn {
-        display: block;
+    .hamburger.open .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
+
 
     body {
         overflow-x: hidden;
@@ -117,10 +79,11 @@ font-size: 25px;
     .FirstSection {
         flex-direction: column-reverse;
     }
-.leftSection{
-    font-size: 2rem;
-    margin: 10px;
-}
+
+    .leftSection {
+        font-size: 2rem;
+        margin: 10px;
+    }
 
     .Secondsection div {
         font-size: 20px;
@@ -150,37 +113,41 @@ font-size: 25px;
         padding: 0px;
         border-collapse: collapse;
     }
+
+    .Fifthsection {
+        margin: 50px 40px 50px;
+    }
+
+    .Fifthsection p {
+        font-size: 15px;
+    }
+    .Fifthsection a{
+        font-size: 1rem;
+    }
 }
-@media only screen and (max-width: 360px) {
-    .right {
+
+@media only screen and (max-width: 480px) {
+    .nav-links {
         display: none;
-        position: absolute;
-        top: 100%;
-        bottom: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: black;
     }
 
-    nav ul {
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 20px;
-        padding-left: 110px;
+    .hamburger {
+        display: flex;
     }
 
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
+    /* Transform the lines to create a hamburger menu effect */
+    .hamburger.open .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
 
-    nav ul li a {
-        font-size: 40px;
+    .hamburger.open .line:nth-child(2) {
+        opacity: 0;
     }
 
-    #checkbtn {
-        display: block;
+    .hamburger.open .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
+
 
     body {
         overflow-x: hidden;
@@ -201,7 +168,8 @@ font-size: 25px;
         padding-left: 10px;
         margin-bottom: 20px;
     }
-    main hr{
+
+    main hr {
         margin-left: 40px;
     }
 
@@ -225,19 +193,45 @@ font-size: 25px;
         padding: 0px;
         border-collapse: collapse;
     }
-    .FifthSection form ul{
+
+    .SixthSection form ul {
         max-width: 350px;
     }
-    .name{
+
+    .name {
         max-width: 200px;
     }
-    .email{
+
+    .email {
         max-width: 200px;
     }
-    .message{
+
+    .message {
         max-width: 200px;
     }
-    .FifthSection form ul li {
-       padding-left: 50px; 
+    .Fifthsection {
+        margin: 50px 30px 50px;
+    }
+    .Fifthsection h3{
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    .Fifthsection p {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .Fifthsection a{
+        font-size: 0.8rem;
+    }
+
+    .SixthSection form ul li {
+        padding-left: 80px;
+    }
 }
+@media only screen and (max-width: 370px) {
+    .card{
+        height: 65vmin;
+    }
+    
 }
