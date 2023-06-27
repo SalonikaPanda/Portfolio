@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salonika Panda </title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,24 +16,29 @@
 <body>
     <header>
         <nav class="sticky">
-            <input type="checkbox" id="check">
-            <label for="check" id="checkbtn"><i class="fa fa-bars" ></i></label>
             <label class="left">
                 <img src="logo.jpg" class="img1">
+                
+                </div>
             </label>
             <label class="right">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="nav-links">
+                    <li><a href="#home-link" class="active">Home</a></li>
+                    <li><a href="#about-link">About</a></li>
+                    <li><a href="#education-link">Education</a></li>
+                    <li><a href="#skills-link">Skills</a></li>
+                    <li><a href="#projects-link">Projects</a></li>
+                    <li><a href="#contact-link">Contact</a></li>
                 </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
             </label>
         </nav>
     </header>
     <main>
-        <section class="FirstSection" id="home">
+        <section class="FirstSection" id="home-link">
             <div class="leftSection">
                 Welcome!
                 <div>I am <span class="text-color">Salonika Panda</span> </div>
@@ -46,7 +51,7 @@
             </div>
         </section>
         <hr>
-        <section class="Secondsection" id="about">
+        <section class="Secondsection" id="about-link">
             <h1>About</h1>
             <img src="img.jpg">
             <div>I am a BCA graduating student who is very passionate for full stack development.I love to learn new
@@ -54,7 +59,7 @@
                 so that i can keep developing new skills and can continue learning. </div>
         </section>
         <hr>
-        <section class="ThirdSection" id="education">
+        <section class="ThirdSection" id="education-link">
             <h1>My Qualifications</h1>
             <table>
                 <tr>
@@ -83,7 +88,7 @@
                 </tr>
             </table>
         </section>
-        <section class="Fourthsection" id="skills">
+        <section class="Fourthsection" id="skills-link">
             <h1>My Skills</h1>
             <p>HTML</p>
             <div class="container">
@@ -97,20 +102,30 @@
 
             <p>Java</p>
             <div class="container">
-                <div class="skills java">60%</div>
+                <div class="skills java">50%</div>
             </div>
 
             <p>MySQL</p>
             <div class="container">
                 <div class="skills mysql">80%</div>
             </div>
-            <p>Python</p>
+            <p>JavaScript</p>
             <div class="container">
-                <div class="skills python">40%</div>
+                <div class="skills javascript">40%</div>
             </div>
         </section>
         <hr>
-        <section class="FifthSection" id="contact">
+        <section class="Fifthsection" id="projects-link">
+            <h1> My Projects</h1>
+            <div class="box">
+                <div class="card">
+                    <h3>Snake Game</h3>
+                    <p>Created a snake game using HTML,CSS and JavaScript.</p>
+                    <a href="https://salonikapanda.github.io/snake-game/" target="_blank">Github Link</a>
+                </div>
+            </div>
+        </section>
+        <section class="SixthSection" id="contact-link">
             <h1>Got a Question?</h1>
             <h3>Contact me</h3>
             <p>Feel free to message.</p>
@@ -148,8 +163,10 @@
         var typed = new Typed('#element', {
             strings: ['to be Full Stack Developer.', 'Graduating student.'],
             typeSpeed: 50,
+            loop:true,
         });
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
