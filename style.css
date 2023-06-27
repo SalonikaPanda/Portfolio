@@ -24,7 +24,10 @@ nav {
 
 .sticky {
     position: fixed;
-    top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 /* style the nav ul */
@@ -36,7 +39,7 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 0px 23px;
+    margin: 30px 23px;
     font-size: 30px;
 }
 
@@ -51,6 +54,56 @@ nav a:hover {
     background-color: hsl(0, 5%, 21%);
 }
 
+.nav-links li a.active {
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .line {
+    width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-top: 60px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    z-index: 998;
+  }
+
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 
 .img1 {
     max-width: 100%;
@@ -171,7 +224,52 @@ td {
     font-style: italic;
 }
 
-.FifthSection h1 {
+.Fifthsection {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 70px;
+    margin: 50px 90px 50px;
+    background:#433068;
+
+}
+
+.Fifthsection h1 {
+    font-size: 40px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.card {
+    height: 35vmin;
+    width: 55vmin;
+    background: #8a3f96;
+    border-radius: 30px;
+    color: white;
+    margin-bottom: 40px;
+}
+.Fifthsection h3{
+    margin: 20px;
+    font-size: 2rem;
+}
+.Fifthsection p{
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.Fifthsection a{
+    color: skyblue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.SixthSection h1 {
     display: block;
     text-align: center;
     font-size: 40px;
@@ -179,32 +277,32 @@ td {
     margin-top: 30px;
 }
 
-.FifthSection h3 {
+.SixthSection h3 {
     display: block;
     text-align: center;
     font-size: 30px;
     margin-bottom: 4px;
 }
 
-.FifthSection p {
+.SixthSection p {
     display: block;
     text-align: center;
     margin-top: 0px;
 }
 
-.FifthSection form {
+.SixthSection form {
     display: flex;
     justify-content: center;
     margin: 30px;
     text-align: justify;
 }
 
-.FifthSection form ul {
+.SixthSection form ul {
     list-style: none;
     padding: auto;
 }
 
-.FifthSection form ul li {
+.SixthSection form ul li {
     padding: 10px;
     background-color: #4c5378;
 }
@@ -257,7 +355,7 @@ td {
     background-color: #2cdd9c;
 }
 
-.FifthSection form ul li label {
+.SixthSection form ul li label {
     margin: 0 0 3px 0;
     padding: 0px;
     display: block;
@@ -289,7 +387,7 @@ td {
 }
 
 .java {
-    width: 60%;
+    width: 50%;
     background-color: #f44336;
 }
 
@@ -298,7 +396,7 @@ td {
     background-color: #c99f35;
 }
 
-.python {
+.javascript {
     width: 40%;
     background-color: #7912ac;
 }
@@ -316,13 +414,7 @@ footer {
     color: #4bd9d1;
 }
 
-.footer {
-    display: flex;
-    justify-content: flex-start;
-}
-
 footer.footer-rights {
     text-align: center;
     font-size: 70px;
 }
-
