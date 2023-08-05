@@ -2,23 +2,17 @@
     .nav-links {
         display: none;
     }
-
     .hamburger {
         display: flex;
     }
-
-
-
     body {
         overflow-x: hidden;
         padding: auto;
         margin: auto;
     }
-
     .FirstSection {
         flex-direction: column-reverse;
     }
-
     .leftSection {
         margin-top: 0px;
         width: 90%;
@@ -26,18 +20,15 @@
         font-size: 2.5rem;
         margin-left: 10px;
     }
-
     .rightSection {
         width: 60%;
     }
-
     .Secondsection div {
         margin: 0px;
         padding: 0px;
         margin-bottom: 20px;
         font-size: 25px;
     }
-
     .ThirdSection table,
     th,
     td {
@@ -53,40 +44,31 @@
     margin-top: 20vw;
 }
 }
-
 @media only screen and (max-width: 560px) {
     .nav-links {
         display: none;
     }
-
     .hamburger {
         display: flex;
     }
-
     /* Transform the lines to create a hamburger menu effect */
     .hamburger.open .line:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-
     .hamburger.open .line:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger.open .line:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
-
     body {
         overflow-x: hidden;
         padding: 0;
         margin: 0;
     }
-
     .FirstSection {
         flex-direction: column-reverse;
     }
-
     .leftSection {
         font-size: 2rem;
         margin: 10px;
@@ -98,20 +80,17 @@
         padding-left: 0px;
         margin-bottom: 20px;
     }
-
     .ThirdSection table {
         width: 90vw;
         margin: 5p;
         padding: 0;
     }
-
     .container {
         width: 80%;
         background-color: #ddd;
         margin: 20px;
         margin-left: 50px;
     }
-
     .ThirdSection table,
     th,
     td {
@@ -119,11 +98,9 @@
         padding: 0px;
         border-collapse: collapse;
     }
-
     .Fifthsection {
         margin: 50px 40px 50px;
     }
-
     .Fifthsection p {
         font-size: 15px;
     }
@@ -135,25 +112,20 @@
         margin-top: 30vw;
     }
 }
-
 @media only screen and (max-width: 480px) {
     .nav-links {
         display: none;
     }
-
     .hamburger {
         display: flex;
     }
-
     /* Transform the lines to create a hamburger menu effect */
     .hamburger.open .line:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-
     .hamburger.open .line:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger.open .line:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -173,24 +145,20 @@
         padding-left: 10px;
         margin-bottom: 20px;
     }
-
     main hr {
         margin-left: 40px;
     }
-
     .ThirdSection table {
         width: 30vw;
         margin: 0p;
         padding: 0;
     }
-
     .container {
         width: 80%;
         background-color: #ddd;
         margin: 20px;
         margin-left: 60px;
     }
-
     .ThirdSection table,
     th,
     td {
@@ -210,15 +178,12 @@
     .SixthSection form ul {
         max-width: 350px;
     }
-
     .name {
         max-width: 200px;
     }
-
     .email {
         max-width: 200px;
     }
-
     .message {
         max-width: 200px;
     }
@@ -237,7 +202,6 @@
     .Fifthsection a{
         font-size: 0.8rem;
     }
-
     .SixthSection form ul li {
         padding-left: 80px;
     }
