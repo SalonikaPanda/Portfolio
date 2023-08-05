@@ -137,7 +137,23 @@ nav a:hover {
     padding: 40px;
     height: auto;
 }
+.CVbutton {
+    display: inline-block;
+    padding: 20px;
+    margin: 40px;
+    margin-top: 50px;
+    width: 200px;
+    font-size: 1.2rem;
+    background: #828fae;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+}
 
+.CVbutton:hover {
+    background: #41aca1;
+}
 main hr {
     height: 0.4px;
     background: #41aca1;
