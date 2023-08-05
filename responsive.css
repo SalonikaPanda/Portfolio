@@ -45,6 +45,13 @@
         padding: 5px;
         border-collapse: collapse;
     }
+    #successMessage{
+        width: 35vw;
+        margin-top: 20vw;
+    }
+#errorMessage{
+    margin-top: 20vw;
+}
 }
 
 @media only screen and (max-width: 560px) {
@@ -84,7 +91,6 @@
         font-size: 2rem;
         margin: 10px;
     }
-
     .Secondsection div {
         font-size: 20px;
         text-align: center;
@@ -124,6 +130,10 @@
     .Fifthsection a{
         font-size: 1rem;
     }
+    #successMessage{
+        width: 50vw;
+        margin-top: 30vw;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -147,19 +157,14 @@
     .hamburger.open .line:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
-
     body {
         overflow-x: hidden;
         padding: auto;
         margin: auto;
     }
-
     .FirstSection {
         flex-direction: column-reverse;
     }
-
-
     .Secondsection div {
         font-size: 20px;
         text-align: center;
@@ -193,7 +198,15 @@
         padding: 0px;
         border-collapse: collapse;
     }
-
+    .cards-container .card{
+        height: 242px;
+    }
+    .card-slider i:first-child {
+        left: -38px;
+    }
+    card-slider i:last-child {
+        right: -38px;
+    }
     .SixthSection form ul {
         max-width: 350px;
     }
@@ -219,7 +232,7 @@
 
     .Fifthsection p {
         font-size: 15px;
-        margin: 10px;
+        margin: 15px;
     }
     .Fifthsection a{
         font-size: 0.8rem;
@@ -228,10 +241,15 @@
     .SixthSection form ul li {
         padding-left: 80px;
     }
+    #errorMessage{
+        margin-top: 40vw;
+    }
 }
 @media only screen and (max-width: 370px) {
-    .card{
-        height: 65vmin;
+    .cards-container .card{
+        height: 242px;
     }
-    
+    #successMessage{
+        width: 70vw;
+    }
 }
