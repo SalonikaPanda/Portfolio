@@ -51,8 +51,7 @@
     .hamburger {
         display: flex;
     }
-    /* Transform the lines to create a hamburger menu effect */
-    .hamburger.open .line:nth-child(1) {
+     .hamburger.open .line:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
     .hamburger.open .line:nth-child(2) {
