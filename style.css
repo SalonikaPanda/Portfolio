@@ -11,7 +11,6 @@ body {
 
 }
 
-/* Style the navbar */
 nav {
     background-color: #282543;
     height: 80px;
@@ -30,7 +29,6 @@ nav {
     z-index: 999;
 }
 
-/* style the nav ul */
 nav ul {
     display: flex;
     justify-content: center;
@@ -48,7 +46,6 @@ nav ul li a {
     color: white;
 }
 
-/* Navbar colors on mouse-over */
 nav a:hover {
     color: rgb(64, 118, 205);
     background-color: hsl(0, 5%, 21%);
