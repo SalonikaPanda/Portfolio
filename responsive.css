@@ -51,6 +51,9 @@
         padding: 30px;
         margin: 0;
     }
+    .left_Second{
+         width: fit-content;
+    }
 
 }
 
@@ -60,8 +63,7 @@
         margin-bottom: 30px;
     }
 
-    .left_Second {
-        height: 50%;
+   c
         font-size: 0.8rem;
         margin: 0px 10px 0px 10px;
     }
@@ -77,6 +79,9 @@
 @media only screen and (max-width: 380px) {
     .container {
         font-size: 0.8rem;
+    }
+    .left_Second{
+     width: fit-content;
     }
 
 }
