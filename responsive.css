@@ -63,7 +63,9 @@
         margin-bottom: 30px;
     }
 
-   c
+    .left_Second {
+        height: 50%;
+        width:fit-content;
         font-size: 0.8rem;
         margin: 0px 10px 0px 10px;
     }
@@ -73,6 +75,9 @@
         padding: 30px;
         margin: 0;
     }
+.Fourthsection{
+    padding:20px;
+}
 
 }
 
