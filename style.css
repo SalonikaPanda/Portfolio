@@ -9,6 +9,11 @@
 .bg-nav {
     background-color: #282543;
 }
+.navbar-toggler:focus {
+    box-shadow: none !important;
+   border: 0;
+   box-shadow: none;
+ }
 .FirstSection{
     align-items: center;
 }
@@ -29,7 +34,7 @@
 
 .btn {
     padding: 10px;
-    margin: 40px;
+    margin: 20px 10px 10px 10px;
 }
 
 .bg-home {
@@ -71,7 +76,9 @@
     border-radius: 50px;
     margin: 80px 20px;
 }
-
+.ThirdSection{
+    padding-top: 30px;
+}
 .container {
     width: 80%;
     text-align: center;
@@ -115,7 +122,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    padding: 20px;
+    padding: 70px;
     height: 100vh;
 }
 
